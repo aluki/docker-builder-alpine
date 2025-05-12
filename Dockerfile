@@ -1,4 +1,7 @@
-FROM aluki/base-alpine:3.21.3
+ARG FROM_IMAGE
+ARG FROM_VERSION
+
+FROM ${FROM_IMAGE}:${FROM_VERSION}
 
 RUN apk add build-base git curl
 

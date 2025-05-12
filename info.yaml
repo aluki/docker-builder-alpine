@@ -1,0 +1,4 @@
+from_image: aluki/base-alpine
+from_version: 3.21.3
+image: aluki/builder-alpine
+version: 3.21.3

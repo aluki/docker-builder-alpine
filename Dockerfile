@@ -3,8 +3,9 @@ ARG FROM_VERSION
 
 FROM ${FROM_IMAGE}:${FROM_VERSION}
 
+USER 0
+
 RUN apk add build-base git curl
 
-COPY run.sh "${CONTAINER_RUN}"
-RUN chmod +x "${CONTAINER_RUN}"
+USER 1000
 
